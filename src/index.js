@@ -161,7 +161,7 @@ bot.start((ctx) => {
 
 setInterval(async () => {
   await checkForNewArticles();
-}, 1 * 60 * 1000);
+}, 10 * 60 * 1000);
 bot.launch();
 
 console.log("🎯 Бот готовий до роботи!");
