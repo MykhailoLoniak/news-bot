@@ -1,530 +1,133 @@
 {
   "articles": [
     {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "Trump amenaza a Canadá con aranceles de un 50% al aluminio y el acero, el doble de lo previsto ",
-      "link": "https://elpais.com/internacional/2025-03-11/trump-castiga-a-canada-con-aranceles-de-un-50-al-aluminio-y-el-acero-el-doble-de-lo-previsto.html",
-      "content": "El presidente de EE UU anuncia la medida en represalia al aumento en un 25% del precio de la electricidad que sirve Ontario a Míchigan, Nueva York y Minnesota. Horas después, la provincia canadiense retira ese gravamen",
-      "pubDate": "2025-03-11T20:23:56.000Z",
-      "summary": "Президент С.Ш. оголошує, що згідно з цим показником, кількість опадів зростає на 25 відсотків від ціни електроенергії в штаті Мічиган, Нью - Йорк та Міннесота."
-    },
-    {
-      "title": "Cae el Gobierno de Portugal tras perder el primer ministro conservador la moción de confianza ",
-      "link": "https://elpais.com/internacional/2025-03-11/cae-el-gobierno-de-portugal-tras-perder-el-primer-ministro-conservador-la-mocion-de-confianza.html",
-      "content": "Luís Montenegro trató de evitar ‘in extremis’ la votación en el Parlamento con una oferta que los socialistas rechazaron. El presidente de la República decidirá ahora, tras escuchar a los partidos, si convoca las terceras elecciones desde 2022",
-      "pubDate": "2025-03-11T20:23:10.000Z",
-      "summary": "Президент Республіки тепер вирішить, слухаючи матчі, якщо скличе третє вибори після 2022 р...."
-    },
-    {
-      "title": "Castuera concentra el dolor y el miedo por el asesinato de la educadora Belén Cortés",
-      "link": "https://elpais.com/espana/2025-03-11/castuera-concentra-el-dolor-y-el-miedo-por-el-asesinato-de-la-educadora-belen-cortes.html",
-      "content": "Decenas de vecinos del municipio pacense y otros puntos de Extremadura despiden a la trabajadora social brutalmente asesinada presuntamente por dos menores a los que cuidaba en un piso de medidas judiciales de Badajoz",
-      "pubDate": "2025-03-11T20:08:05.000Z",
-      "summary": "Десятки сусідів у місті Паганс та інші пункти екстремуратора, жорстоко винищуючи двох неповнолітніх, яких я доглядав на підлозі судового процесу в Бададжосі."
-    },
-    {
-      "title": "Ucrania acepta la propuesta de EE UU de un alto el fuego de 30 días con Rusia a cambio de recuperar la ayuda militar",
-      "link": "https://elpais.com/internacional/2025-03-11/ucrania-acepta-la-propuesta-de-ee-uu-de-un-alto-el-fuego-de-30-dias-con-rusia-a-cambio-de-recuperar-la-ayuda-militar.html",
-      "content": "La reunión entre Washington y Kiev en Arabia Saudí finaliza con una declaración conjunta que incluye un acuerdo sobre la explotación de minerales y que ahora se trasladará al Kremlin. Trump asegura que está dispuesto a invitar a Zelenski a la Casa Blanca y que espera hablar con Putin esta semana",
-      "pubDate": "2025-03-11T19:49:49.000Z",
-      "summary": "Зустріч між Вашингтоном та Києм в Саудівській Аравії закінчується спільною декларацією про використання мінералів і тепер переїжджає в Кремль."
-    },
-    {
-      "title": "Los aliados de Sánchez cierran filas contra el PP sobre la delegación de competencias a Cataluña",
-      "link": "https://elpais.com/espana/2025-03-11/el-pp-tensa-en-la-mesa-del-congreso-su-oposicion-a-delegar-competencias-de-inmigracion-a-cataluna.html",
-      "content": "Los populares intentan sin éxito que el pacto entre PSOE y Junts ni siquiera se debata en el Congreso",
-      "pubDate": "2025-03-11T19:44:56.000Z",
-      "summary": "Популярні люди безуспішно намагаються, щоб угода між ПСОЕ та Юнтсом навіть не розглядалася в Конгресі..."
-    },
-    {
-      "title": "Muere la estrella de K-pop Wheesung a los 43 años",
-      "link": "https://elpais.com/cultura/2025-03-11/muere-la-estrella-del-k-pop-wheesung-a-los-43-anos.html",
-      "content": "El músico surcoreano, que llevó el R&B a las listas de éxitos, fue encontrado sin vida en su hogar en Seúl el lunes por la noche",
-      "pubDate": "2025-03-11T19:25:47.000Z",
-      "summary": "Соборський музикант, який вів R&B до списку успіхів, був знайдений в Сеулі в понеділок ввечері без життя."
-    },
-    {
-      "title": "Bruselas consagra el endurecimiento de sus políticas de migración al avalar los campos de deportación fuera de la UE",
-      "link": "https://elpais.com/internacional/2025-03-11/bruselas-consagra-su-giro-a-la-derecha-en-migracion-al-avalar-los-campos-de-deportacion-fuera-de-la-ue.html",
-      "content": "Las organizaciones de derechos humanos y los partidos de centro y de izquierda cargan contra una nueva regulación sobre demandantes de asilo, que abre la vía a un modelo similar al de Meloni en Albania",
-      "pubDate": "2025-03-11T19:10:26.000Z",
-      "summary": "Організації з прав людини і партії в центрі та в лівих країнах мають проти нового регулювання прохачів притулку, який відкриває шлях до подібної моделі Мелоні в Албанії..."
-    },
-    {
-      "title": "El Constitucional de Rumania confirma la exclusión del prorruso Georgescu de las presidenciales de mayo",
-      "link": "https://elpais.com/internacional/2025-03-11/el-constitucional-de-rumania-confirma-la-exclusion-del-prorruso-georgescu-de-las-presidenciales-de-mayo.html",
-      "content": "El órgano electoral había rechazado la candidatura del ultraderechista, cuya victoria electoral en noviembre fue anulada por supuesta financiación ilegal. “Considero mi misión cumplida. Expuse al demonio en todo su fealdad”, asegura",
-      "pubDate": "2025-03-11T19:06:56.000Z",
-      "summary": "Виборний орган відкинув ультрарехіст, якого виборна перемога у листопаді скасувала так зване незаконне фінансування."
-    },
-    {
-      "title": "Macron, a los jefes militares de una treintena de países sobre Ucrania: “Es el momento de que Europa haga valer todo su peso”",
-      "link": "https://elpais.com/internacional/2025-03-11/macron-reune-en-paris-a-31-jefes-militares-de-paises-dispuestos-a-implicarse-en-una-paz-en-ucrania.html",
-      "content": "El grupo se ha reunido en París para analizar alternativas que permitan avanzar en el envío de tropas de paz tras un hipotético alto el fuego",
-      "pubDate": "2025-03-11T19:04:21.000Z",
-      "summary": "Група зібралася в Парижі, щоб обговорити альтернативи, які дозволяють поширювати війська миру після гіпотетики, що випереджають вогонь...."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "Trump amenaza a Canadá con aranceles de un 50% al aluminio y el acero, el doble de lo previsto ",
-      "link": "https://elpais.com/internacional/2025-03-11/trump-castiga-a-canada-con-aranceles-de-un-50-al-aluminio-y-el-acero-el-doble-de-lo-previsto.html",
-      "content": "El presidente de EE UU anuncia la medida en represalia al aumento en un 25% del precio de la electricidad que sirve Ontario a Míchigan, Nueva York y Minnesota. Horas después, la provincia canadiense retira ese gravamen",
-      "pubDate": "2025-03-11T20:23:56.000Z",
-      "summary": "Президент С.Ш. оголошує, що згідно з цим показником, кількість опадів зростає на 25 відсотків від ціни електроенергії в штаті Мічиган, Нью - Йорк та Міннесота."
-    },
-    {
-      "title": "Cae el Gobierno de Portugal tras perder el primer ministro conservador la moción de confianza ",
-      "link": "https://elpais.com/internacional/2025-03-11/cae-el-gobierno-de-portugal-tras-perder-el-primer-ministro-conservador-la-mocion-de-confianza.html",
-      "content": "Luís Montenegro trató de evitar ‘in extremis’ la votación en el Parlamento con una oferta que los socialistas rechazaron. El presidente de la República decidirá ahora, tras escuchar a los partidos, si convoca las terceras elecciones desde 2022",
-      "pubDate": "2025-03-11T20:23:10.000Z",
-      "summary": "Президент Республіки тепер, вислухавши матчі, вирішив, якщо він скличе третє рішення з 2022 року."
-    },
-    {
-      "title": "Castuera concentra el dolor y el miedo por el asesinato de la educadora Belén Cortés",
-      "link": "https://elpais.com/espana/2025-03-11/castuera-concentra-el-dolor-y-el-miedo-por-el-asesinato-de-la-educadora-belen-cortes.html",
-      "content": "Decenas de vecinos del municipio pacense y otros puntos de Extremadura despiden a la trabajadora social brutalmente asesinada presuntamente por dos menores a los que cuidaba en un piso de medidas judiciales de Badajoz",
-      "pubDate": "2025-03-11T20:08:05.000Z",
-      "summary": "Десятки сусідів у місті Паганс та інші пункти екстремуратора, жорстоко винищуючи двох неповнолітніх, яких я доглядав на підлозі судового процесу в Бададжосі."
-    },
-    {
-      "title": "Ucrania acepta la propuesta de EE UU de un alto el fuego de 30 días con Rusia a cambio de recuperar la ayuda militar",
-      "link": "https://elpais.com/internacional/2025-03-11/ucrania-acepta-la-propuesta-de-ee-uu-de-un-alto-el-fuego-de-30-dias-con-rusia-a-cambio-de-recuperar-la-ayuda-militar.html",
-      "content": "La reunión entre Washington y Kiev en Arabia Saudí finaliza con una declaración conjunta que incluye un acuerdo sobre la explotación de minerales y que ahora se trasladará al Kremlin. Trump asegura que está dispuesto a invitar a Zelenski a la Casa Blanca y que espera hablar con Putin esta semana",
-      "pubDate": "2025-03-11T19:49:49.000Z",
-      "summary": "Зустріч між Вашингтоном та Києм в Саудівській Аравії закінчується спільною декларацією про використання мінералів і тепер переїжджає в Кремль."
-    },
-    {
-      "title": "Los aliados de Sánchez cierran filas contra el PP sobre la delegación de competencias a Cataluña",
-      "link": "https://elpais.com/espana/2025-03-11/el-pp-tensa-en-la-mesa-del-congreso-su-oposicion-a-delegar-competencias-de-inmigracion-a-cataluna.html",
-      "content": "Los populares intentan sin éxito que el pacto entre PSOE y Junts ni siquiera se debata en el Congreso",
-      "pubDate": "2025-03-11T19:44:56.000Z",
-      "summary": "Навіть на Конгресі навіть не дискутують про угоду між ПСОЕ і Юнтсом."
-    },
-    {
-      "title": "Muere la estrella de K-pop Wheesung a los 43 años",
-      "link": "https://elpais.com/cultura/2025-03-11/muere-la-estrella-del-k-pop-wheesung-a-los-43-anos.html",
-      "content": "El músico surcoreano, que llevó el R&B a las listas de éxitos, fue encontrado sin vida en su hogar en Seúl el lunes por la noche",
-      "pubDate": "2025-03-11T19:25:47.000Z",
-      "summary": "Соборський музикант, який приніс R&B до списку успіхів, був знайдений у своєму домі в Сеулі в понеділок ввечері. \"Ви нічого не можете сказати\", сказав CNN."
-    },
-    {
-      "title": "Bruselas consagra el endurecimiento de sus políticas de migración al avalar los campos de deportación fuera de la UE",
-      "link": "https://elpais.com/internacional/2025-03-11/bruselas-consagra-su-giro-a-la-derecha-en-migracion-al-avalar-los-campos-de-deportacion-fuera-de-la-ue.html",
-      "content": "Las organizaciones de derechos humanos y los partidos de centro y de izquierda cargan contra una nueva regulación sobre demandantes de asilo, que abre la vía a un modelo similar al de Meloni en Albania",
-      "pubDate": "2025-03-11T19:10:26.000Z",
-      "summary": "Організації з прав людини, партії центра та лівого країн мають право на новий регуляцію позивачів притулку. Він відкриває шлях до моделі, схожої на модель Мелоні в Албанії."
-    },
-    {
-      "title": "El Constitucional de Rumania confirma la exclusión del prorruso Georgescu de las presidenciales de mayo",
-      "link": "https://elpais.com/internacional/2025-03-11/el-constitucional-de-rumania-confirma-la-exclusion-del-prorruso-georgescu-de-las-presidenciales-de-mayo.html",
-      "content": "El órgano electoral había rechazado la candidatura del ultraderechista, cuya victoria electoral en noviembre fue anulada por supuesta financiación ilegal. “Considero mi misión cumplida. Expuse al demonio en todo su fealdad”, asegura",
-      "pubDate": "2025-03-11T19:06:56.000Z",
-      "summary": "Виборний орган відкинув ультрарехистську кандидатуру: « Я впевнений, що моя місія виконана."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "Trump amenaza a Canadá con aranceles de un 50% al aluminio y el acero, el doble de lo previsto ",
-      "link": "https://elpais.com/internacional/2025-03-11/trump-castiga-a-canada-con-aranceles-de-un-50-al-aluminio-y-el-acero-el-doble-de-lo-previsto.html",
-      "content": "El presidente de EE UU anuncia la medida en represalia al aumento en un 25% del precio de la electricidad que sirve Ontario a Míchigan, Nueva York y Minnesota. Horas después, la provincia canadiense retira ese gravamen",
-      "pubDate": "2025-03-11T20:23:56.000Z",
-      "summary": "Президент С.Ш. оголошує, що згідно з цим показником, кількість опадів зростає на 25 відсотків від ціни електроенергії в штаті Мічиган, Нью - Йорк та Міннесота."
-    },
-    {
-      "title": "Cae el Gobierno de Portugal tras perder el primer ministro conservador la moción de confianza ",
-      "link": "https://elpais.com/internacional/2025-03-11/cae-el-gobierno-de-portugal-tras-perder-el-primer-ministro-conservador-la-mocion-de-confianza.html",
-      "content": "Luís Montenegro trató de evitar ‘in extremis’ la votación en el Parlamento con una oferta que los socialistas rechazaron. El presidente de la República decidirá ahora, tras escuchar a los partidos, si convoca las terceras elecciones desde 2022",
-      "pubDate": "2025-03-11T20:23:10.000Z",
-      "summary": "Президент Республіки тепер, вислухавши матчі, вирішив, якщо він скличе третє рішення з 2022 року."
-    },
-    {
-      "title": "Castuera concentra el dolor y el miedo por el asesinato de la educadora Belén Cortés",
-      "link": "https://elpais.com/espana/2025-03-11/castuera-concentra-el-dolor-y-el-miedo-por-el-asesinato-de-la-educadora-belen-cortes.html",
-      "content": "Decenas de vecinos del municipio pacense y otros puntos de Extremadura despiden a la trabajadora social brutalmente asesinada presuntamente por dos menores a los que cuidaba en un piso de medidas judiciales de Badajoz",
-      "pubDate": "2025-03-11T20:08:05.000Z",
-      "summary": "Десятки сусідів у місті Паганс та інші пункти екстремуратора, жорстоко винищуючи двох неповнолітніх, яких я доглядав на підлозі судового процесу в Бададжосі."
-    },
-    {
-      "title": "Ucrania acepta la propuesta de EE UU de un alto el fuego de 30 días con Rusia a cambio de recuperar la ayuda militar",
-      "link": "https://elpais.com/internacional/2025-03-11/ucrania-acepta-la-propuesta-de-ee-uu-de-un-alto-el-fuego-de-30-dias-con-rusia-a-cambio-de-recuperar-la-ayuda-militar.html",
-      "content": "La reunión entre Washington y Kiev en Arabia Saudí finaliza con una declaración conjunta que incluye un acuerdo sobre la explotación de minerales y que ahora se trasladará al Kremlin. Trump asegura que está dispuesto a invitar a Zelenski a la Casa Blanca y que espera hablar con Putin esta semana",
-      "pubDate": "2025-03-11T19:49:49.000Z",
-      "summary": "Збори між Вашингтоном та Києм в Саудівській Аравії закінчать спільною декларацією. що хоче запросити Зеленського до Білого Дому."
-    },
-    {
-      "title": "Los aliados de Sánchez cierran filas contra el PP sobre la delegación de competencias a Cataluña",
-      "link": "https://elpais.com/espana/2025-03-11/el-pp-tensa-en-la-mesa-del-congreso-su-oposicion-a-delegar-competencias-de-inmigracion-a-cataluna.html",
-      "content": "Los populares intentan sin éxito que el pacto entre PSOE y Junts ni siquiera se debata en el Congreso",
-      "pubDate": "2025-03-11T19:44:56.000Z",
-      "summary": "Навіть на Конгресі навіть не дискутують про угоду між ПСОЕ і Юнтсом."
-    },
-    {
-      "title": "Muere la estrella de K-pop Wheesung a los 43 años",
-      "link": "https://elpais.com/cultura/2025-03-11/muere-la-estrella-del-k-pop-wheesung-a-los-43-anos.html",
-      "content": "El músico surcoreano, que llevó el R&B a las listas de éxitos, fue encontrado sin vida en su hogar en Seúl el lunes por la noche",
-      "pubDate": "2025-03-11T19:25:47.000Z",
-      "summary": "Соборський музикант, який приніс R&B до списку успіхів, був знайдений у своєму домі в Сеулі в понеділок ввечері. \"Ви нічого не можете сказати\", сказав CNN."
-    },
-    {
-      "title": "Bruselas consagra el endurecimiento de sus políticas de migración al avalar los campos de deportación fuera de la UE",
-      "link": "https://elpais.com/internacional/2025-03-11/bruselas-consagra-su-giro-a-la-derecha-en-migracion-al-avalar-los-campos-de-deportacion-fuera-de-la-ue.html",
-      "content": "Las organizaciones de derechos humanos y los partidos de centro y de izquierda cargan contra una nueva regulación sobre demandantes de asilo, que abre la vía a un modelo similar al de Meloni en Albania",
-      "pubDate": "2025-03-11T19:10:26.000Z",
-      "summary": "Організації з прав людини, партії центра та лівого країн мають право на новий регуляцію позивачів притулку. Він відкриває шлях до моделі, схожої на модель Мелоні в Албанії."
-    },
-    {
-      "title": "La fiscalía acusa a médicos y enfermeros por la muerte de Maradona: “Con crueldad decidieron que muriera”",
-      "link": "https://elpais.com/argentina/2025-03-11/la-fiscalia-acusa-a-medicos-y-enfermeros-por-la-muerte-de-maradona-con-crueldad-decidieron-que-muriera.html",
-      "content": "La querella argumenta en el arranque del juicio que hubo desidia ante el evidente deterioro de salud del jugador, fallecido en 2020",
-      "pubDate": "2025-03-11T20:41:07.000Z",
-      "summary": "Орелья доводить, що в момент початку судового процесу вона була стурбована очевидним погіршенням здоров'я гравця, який помер 2020 року...."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "Trump amenaza a Canadá con aranceles de un 50% al aluminio y el acero, el doble de lo previsto ",
-      "link": "https://elpais.com/internacional/2025-03-11/trump-castiga-a-canada-con-aranceles-de-un-50-al-aluminio-y-el-acero-el-doble-de-lo-previsto.html",
-      "content": "El presidente de EE UU anuncia la medida en represalia al aumento en un 25% del precio de la electricidad que sirve Ontario a Míchigan, Nueva York y Minnesota. Horas después, la provincia canadiense retira ese gravamen",
-      "pubDate": "2025-03-11T20:23:56.000Z",
-      "summary": "Президент С.Ш. оголошує, що згідно з цим показником, кількість опадів зростає на 25 відсотків від ціни електроенергії в штаті Мічиган, Нью - Йорк та Міннесота."
-    },
-    {
-      "title": "Cae el Gobierno de Portugal tras perder el primer ministro conservador la moción de confianza ",
-      "link": "https://elpais.com/internacional/2025-03-11/cae-el-gobierno-de-portugal-tras-perder-el-primer-ministro-conservador-la-mocion-de-confianza.html",
-      "content": "Luís Montenegro trató de evitar ‘in extremis’ la votación en el Parlamento con una oferta que los socialistas rechazaron. El presidente de la República decidirá ahora, tras escuchar a los partidos, si convoca las terceras elecciones desde 2022",
-      "pubDate": "2025-03-11T20:23:10.000Z",
-      "summary": "Президент Республіки тепер, вислухавши матчі, вирішив, якщо він скличе третє рішення з 2022 року."
-    },
-    {
-      "title": "Castuera concentra el dolor y el miedo por el asesinato de la educadora Belén Cortés",
-      "link": "https://elpais.com/espana/2025-03-11/castuera-concentra-el-dolor-y-el-miedo-por-el-asesinato-de-la-educadora-belen-cortes.html",
-      "content": "Decenas de vecinos del municipio pacense y otros puntos de Extremadura despiden a la trabajadora social brutalmente asesinada presuntamente por dos menores a los que cuidaba en un piso de medidas judiciales de Badajoz",
-      "pubDate": "2025-03-11T20:08:05.000Z",
-      "summary": "Десятки сусідів у місті Паганс та інші пункти екстремуратора, жорстоко винищуючи двох неповнолітніх, яких я доглядав на підлозі судового процесу в Бададжосі."
-    },
-    {
-      "title": "Ucrania acepta la propuesta de EE UU de un alto el fuego de 30 días con Rusia a cambio de recuperar la ayuda militar",
-      "link": "https://elpais.com/internacional/2025-03-11/ucrania-acepta-la-propuesta-de-ee-uu-de-un-alto-el-fuego-de-30-dias-con-rusia-a-cambio-de-recuperar-la-ayuda-militar.html",
-      "content": "La reunión entre Washington y Kiev en Arabia Saudí finaliza con una declaración conjunta que incluye un acuerdo sobre la explotación de minerales y que ahora se trasladará al Kremlin. Trump asegura que está dispuesto a invitar a Zelenski a la Casa Blanca y que espera hablar con Putin esta semana",
-      "pubDate": "2025-03-11T19:49:49.000Z",
-      "summary": "Збори між Вашингтоном та Києм в Саудівській Аравії закінчать спільною декларацією. що хоче запросити Зеленського до Білого Дому."
-    },
-    {
-      "title": "Los aliados de Sánchez cierran filas contra el PP sobre la delegación de competencias a Cataluña",
-      "link": "https://elpais.com/espana/2025-03-11/el-pp-tensa-en-la-mesa-del-congreso-su-oposicion-a-delegar-competencias-de-inmigracion-a-cataluna.html",
-      "content": "Los populares intentan sin éxito que el pacto entre PSOE y Junts ni siquiera se debata en el Congreso",
-      "pubDate": "2025-03-11T19:44:56.000Z",
-      "summary": "Навіть на Конгресі навіть не дискутують про угоду між ПСОЕ і Юнтсом."
-    },
-    {
-      "title": "Muere la estrella de K-pop Wheesung a los 43 años",
-      "link": "https://elpais.com/cultura/2025-03-11/muere-la-estrella-del-k-pop-wheesung-a-los-43-anos.html",
-      "content": "El músico surcoreano, que llevó el R&B a las listas de éxitos, fue encontrado sin vida en su hogar en Seúl el lunes por la noche",
-      "pubDate": "2025-03-11T19:25:47.000Z",
-      "summary": "Соборський музикант, який приніс R&B до списку успіхів, був знайдений у своєму домі в Сеулі в понеділок ввечері. \"Ви нічого не можете сказати\", сказав CNN."
-    },
-    {
-      "title": "La fiscalía acusa a médicos y enfermeros por la muerte de Maradona: “Con crueldad decidieron que muriera”",
-      "link": "https://elpais.com/argentina/2025-03-11/la-fiscalia-acusa-a-medicos-y-enfermeros-por-la-muerte-de-maradona-con-crueldad-decidieron-que-muriera.html",
-      "content": "La querella argumenta en el arranque del juicio que hubo desidia ante el evidente deterioro de salud del jugador, fallecido en 2020",
-      "pubDate": "2025-03-11T20:41:07.000Z",
-      "summary": "Орелья доводить, що в момент початку судового процесу вона була стурбована очевидним погіршенням здоров'я гравця, який помер 2020 року...."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "Trump amenaza a Canadá con aranceles de un 50% al aluminio y el acero, el doble de lo previsto ",
-      "link": "https://elpais.com/internacional/2025-03-11/trump-castiga-a-canada-con-aranceles-de-un-50-al-aluminio-y-el-acero-el-doble-de-lo-previsto.html",
-      "content": "El presidente de EE UU anuncia la medida en represalia al aumento en un 25% del precio de la electricidad que sirve Ontario a Míchigan, Nueva York y Minnesota. Horas después, la provincia canadiense retira ese gravamen",
-      "pubDate": "2025-03-11T20:23:56.000Z",
-      "summary": "Президент С.Ш. оголошує, що згідно з цим показником, кількість опадів зростає на 25 відсотків від ціни електроенергії в штаті Мічиган, Нью - Йорк та Міннесота."
-    },
-    {
-      "title": "Cae el Gobierno de Portugal tras perder el primer ministro conservador la moción de confianza ",
-      "link": "https://elpais.com/internacional/2025-03-11/cae-el-gobierno-de-portugal-tras-perder-el-primer-ministro-conservador-la-mocion-de-confianza.html",
-      "content": "Luís Montenegro trató de evitar ‘in extremis’ la votación en el Parlamento con una oferta que los socialistas rechazaron. El presidente de la República decidirá ahora, tras escuchar a los partidos, si convoca las terceras elecciones desde 2022",
-      "pubDate": "2025-03-11T20:23:10.000Z",
-      "summary": "Президент Республіки тепер, вислухавши матчі, вирішив, якщо він скличе третє рішення з 2022 року."
-    },
-    {
-      "title": "Castuera concentra el dolor y el miedo por el asesinato de la educadora Belén Cortés",
-      "link": "https://elpais.com/espana/2025-03-11/castuera-concentra-el-dolor-y-el-miedo-por-el-asesinato-de-la-educadora-belen-cortes.html",
-      "content": "Decenas de vecinos del municipio pacense y otros puntos de Extremadura despiden a la trabajadora social brutalmente asesinada presuntamente por dos menores a los que cuidaba en un piso de medidas judiciales de Badajoz",
-      "pubDate": "2025-03-11T20:08:05.000Z",
-      "summary": "Десятки сусідів у місті Паганс та інші пункти екстремуратора, жорстоко винищуючи двох неповнолітніх, яких я доглядав на підлозі судового процесу в Бададжосі."
-    },
-    {
-      "title": "Ucrania acepta la propuesta de EE UU de un alto el fuego de 30 días con Rusia a cambio de recuperar la ayuda militar",
-      "link": "https://elpais.com/internacional/2025-03-11/ucrania-acepta-la-propuesta-de-ee-uu-de-un-alto-el-fuego-de-30-dias-con-rusia-a-cambio-de-recuperar-la-ayuda-militar.html",
-      "content": "La reunión entre Washington y Kiev en Arabia Saudí finaliza con una declaración conjunta que incluye un acuerdo sobre la explotación de minerales y que ahora se trasladará al Kremlin. Trump asegura que está dispuesto a invitar a Zelenski a la Casa Blanca y que espera hablar con Putin esta semana",
-      "pubDate": "2025-03-11T19:49:49.000Z",
-      "summary": "Збори між Вашингтоном та Києм в Саудівській Аравії закінчать спільною декларацією. що хоче запросити Зеленського до Білого Дому."
-    },
-    {
-      "title": "Los aliados de Sánchez cierran filas contra el PP sobre la delegación de competencias a Cataluña",
-      "link": "https://elpais.com/espana/2025-03-11/el-pp-tensa-en-la-mesa-del-congreso-su-oposicion-a-delegar-competencias-de-inmigracion-a-cataluna.html",
-      "content": "Los populares intentan sin éxito que el pacto entre PSOE y Junts ni siquiera se debata en el Congreso",
-      "pubDate": "2025-03-11T19:44:56.000Z",
-      "summary": "Навіть на Конгресі навіть не дискутують про угоду між ПСОЕ і Юнтсом."
-    },
-    {
-      "title": "La fiscalía acusa a médicos y enfermeros por la muerte de Maradona: “Con crueldad decidieron que muriera”",
-      "link": "https://elpais.com/argentina/2025-03-11/la-fiscalia-acusa-a-medicos-y-enfermeros-por-la-muerte-de-maradona-con-crueldad-decidieron-que-muriera.html",
-      "content": "La querella argumenta en el arranque del juicio que hubo desidia ante el evidente deterioro de salud del jugador, fallecido en 2020",
-      "pubDate": "2025-03-11T20:41:07.000Z",
-      "summary": "Засуджуючи суд над очевидним погіршенням здоров’я гравця, він доводить, що його стан погіршився. Загинув у 2020 році, але, згідно з прогнозами, погіршення здоров’я було тривожним."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "Trump amenaza a Canadá con aranceles de un 50% al aluminio y el acero, el doble de lo previsto ",
-      "link": "https://elpais.com/internacional/2025-03-11/trump-castiga-a-canada-con-aranceles-de-un-50-al-aluminio-y-el-acero-el-doble-de-lo-previsto.html",
-      "content": "El presidente de EE UU anuncia la medida en represalia al aumento en un 25% del precio de la electricidad que sirve Ontario a Míchigan, Nueva York y Minnesota. Horas después, la provincia canadiense retira ese gravamen",
-      "pubDate": "2025-03-11T20:23:56.000Z",
-      "summary": "Президент С.Ш. оголошує, що згідно з цим показником, кількість опадів зростає на 25 відсотків від ціни електроенергії в штаті Мічиган, Нью - Йорк та Міннесота."
-    },
-    {
-      "title": "Cae el Gobierno de Portugal tras perder el primer ministro conservador la moción de confianza ",
-      "link": "https://elpais.com/internacional/2025-03-11/cae-el-gobierno-de-portugal-tras-perder-el-primer-ministro-conservador-la-mocion-de-confianza.html",
-      "content": "Luís Montenegro trató de evitar ‘in extremis’ la votación en el Parlamento con una oferta que los socialistas rechazaron. El presidente de la República decidirá ahora, tras escuchar a los partidos, si convoca las terceras elecciones desde 2022",
-      "pubDate": "2025-03-11T20:23:10.000Z",
-      "summary": "Президент Республіки тепер, вислухавши матчі, вирішив, якщо він скличе третє рішення з 2022 року."
-    },
-    {
-      "title": "Castuera concentra el dolor y el miedo por el asesinato de la educadora Belén Cortés",
-      "link": "https://elpais.com/espana/2025-03-11/castuera-concentra-el-dolor-y-el-miedo-por-el-asesinato-de-la-educadora-belen-cortes.html",
-      "content": "Decenas de vecinos del municipio pacense y otros puntos de Extremadura despiden a la trabajadora social brutalmente asesinada presuntamente por dos menores a los que cuidaba en un piso de medidas judiciales de Badajoz",
-      "pubDate": "2025-03-11T20:08:05.000Z",
-      "summary": "Десятки сусідів у місті Паганс та інші пункти екстремуратора, жорстоко винищуючи двох неповнолітніх, яких я доглядав на підлозі судового процесу в Бададжосі."
-    },
-    {
-      "title": "Ucrania acepta la propuesta de EE UU de un alto el fuego de 30 días con Rusia a cambio de recuperar la ayuda militar",
-      "link": "https://elpais.com/internacional/2025-03-11/ucrania-acepta-la-propuesta-de-ee-uu-de-un-alto-el-fuego-de-30-dias-con-rusia-a-cambio-de-recuperar-la-ayuda-militar.html",
-      "content": "La reunión entre Washington y Kiev en Arabia Saudí finaliza con una declaración conjunta que incluye un acuerdo sobre la explotación de minerales y que ahora se trasladará al Kremlin. Trump asegura que está dispuesto a invitar a Zelenski a la Casa Blanca y que espera hablar con Putin esta semana",
-      "pubDate": "2025-03-11T19:49:49.000Z",
-      "summary": "Збори між Вашингтоном та Києм в Саудівській Аравії закінчать спільною декларацією. що хоче запросити Зеленського до Білого Дому."
-    },
-    {
-      "title": "La fiscalía acusa a médicos y enfermeros por la muerte de Maradona: “Con crueldad decidieron que muriera”",
-      "link": "https://elpais.com/argentina/2025-03-11/la-fiscalia-acusa-a-medicos-y-enfermeros-por-la-muerte-de-maradona-con-crueldad-decidieron-que-muriera.html",
-      "content": "La querella argumenta en el arranque del juicio que hubo desidia ante el evidente deterioro de salud del jugador, fallecido en 2020",
-      "pubDate": "2025-03-11T20:41:07.000Z",
-      "summary": "Засуджуючи суд над очевидним погіршенням здоров’я гравця, він доводить, що його стан погіршився. Загинув у 2020 році, але, згідно з прогнозами, погіршення здоров’я було тривожним."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "Trump amenaza a Canadá con aranceles de un 50% al aluminio y el acero, el doble de lo previsto ",
-      "link": "https://elpais.com/internacional/2025-03-11/trump-castiga-a-canada-con-aranceles-de-un-50-al-aluminio-y-el-acero-el-doble-de-lo-previsto.html",
-      "content": "El presidente de EE UU anuncia la medida en represalia al aumento en un 25% del precio de la electricidad que sirve Ontario a Míchigan, Nueva York y Minnesota. Horas después, la provincia canadiense retira ese gravamen",
-      "pubDate": "2025-03-11T20:23:56.000Z",
-      "summary": "Президент С.Ш. оголошує, що згідно з цим показником, кількість опадів зростає на 25 відсотків від ціни електроенергії в штаті Мічиган, Нью - Йорк та Міннесота."
-    },
-    {
-      "title": "Cae el Gobierno de Portugal tras perder el primer ministro conservador la moción de confianza ",
-      "link": "https://elpais.com/internacional/2025-03-11/cae-el-gobierno-de-portugal-tras-perder-el-primer-ministro-conservador-la-mocion-de-confianza.html",
-      "content": "Luís Montenegro trató de evitar ‘in extremis’ la votación en el Parlamento con una oferta que los socialistas rechazaron. El presidente de la República decidirá ahora, tras escuchar a los partidos, si convoca las terceras elecciones desde 2022",
-      "pubDate": "2025-03-11T20:23:10.000Z",
-      "summary": "Президент Республіки тепер, вислухавши матчі, вирішив, якщо він скличе третє рішення з 2022 року."
-    },
-    {
-      "title": "Castuera concentra el dolor y el miedo por el asesinato de la educadora Belén Cortés",
-      "link": "https://elpais.com/espana/2025-03-11/castuera-concentra-el-dolor-y-el-miedo-por-el-asesinato-de-la-educadora-belen-cortes.html",
-      "content": "Decenas de vecinos del municipio pacense y otros puntos de Extremadura despiden a la trabajadora social brutalmente asesinada presuntamente por dos menores a los que cuidaba en un piso de medidas judiciales de Badajoz",
-      "pubDate": "2025-03-11T20:08:05.000Z",
-      "summary": "Десятки сусідів у місті Паганс та інші пункти екстремуратора, жорстоко винищуючи двох неповнолітніх, яких я доглядав на підлозі судового процесу в Бададжосі."
-    },
-    {
-      "title": "La fiscalía acusa a médicos y enfermeros por la muerte de Maradona: “Con crueldad decidieron que muriera”",
-      "link": "https://elpais.com/argentina/2025-03-11/la-fiscalia-acusa-a-medicos-y-enfermeros-por-la-muerte-de-maradona-con-crueldad-decidieron-que-muriera.html",
-      "content": "La querella argumenta en el arranque del juicio que hubo desidia ante el evidente deterioro de salud del jugador, fallecido en 2020",
-      "pubDate": "2025-03-11T20:41:07.000Z",
-      "summary": "Засуджуючи суд над очевидним погіршенням здоров’я гравця, він доводить, що його стан погіршився. Загинув у 2020 році, але, згідно з прогнозами, погіршення здоров’я було тривожним."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "Trump amenaza a Canadá con aranceles de un 50% al aluminio y el acero, el doble de lo previsto ",
-      "link": "https://elpais.com/internacional/2025-03-11/trump-castiga-a-canada-con-aranceles-de-un-50-al-aluminio-y-el-acero-el-doble-de-lo-previsto.html",
-      "content": "El presidente de EE UU anuncia la medida en represalia al aumento en un 25% del precio de la electricidad que sirve Ontario a Míchigan, Nueva York y Minnesota. Horas después, la provincia canadiense retira ese gravamen",
-      "pubDate": "2025-03-11T20:23:56.000Z",
-      "summary": "Президент С.Ш. оголошує, що згідно з цим показником, кількість опадів зростає на 25 відсотків від ціни електроенергії в штаті Мічиган, Нью - Йорк та Міннесота."
-    },
-    {
-      "title": "Cae el Gobierno de Portugal tras perder el primer ministro conservador la moción de confianza ",
-      "link": "https://elpais.com/internacional/2025-03-11/cae-el-gobierno-de-portugal-tras-perder-el-primer-ministro-conservador-la-mocion-de-confianza.html",
-      "content": "Luís Montenegro trató de evitar ‘in extremis’ la votación en el Parlamento con una oferta que los socialistas rechazaron. El presidente de la República decidirá ahora, tras escuchar a los partidos, si convoca las terceras elecciones desde 2022",
-      "pubDate": "2025-03-11T20:23:10.000Z",
-      "summary": "Президент Республіки тепер, вислухавши матчі, вирішив, якщо він скличе третє рішення з 2022 року."
-    },
-    {
-      "title": "La fiscalía acusa a médicos y enfermeros por la muerte de Maradona: “Con crueldad decidieron que muriera”",
-      "link": "https://elpais.com/argentina/2025-03-11/la-fiscalia-acusa-a-medicos-y-enfermeros-por-la-muerte-de-maradona-con-crueldad-decidieron-que-muriera.html",
-      "content": "La querella argumenta en el arranque del juicio que hubo desidia ante el evidente deterioro de salud del jugador, fallecido en 2020",
-      "pubDate": "2025-03-11T20:41:07.000Z",
-      "summary": "Засуджуючи суд над очевидним погіршенням здоров’я гравця, він доводить, що його стан погіршився. Загинув у 2020 році, але, згідно з прогнозами, погіршення здоров’я було тривожним."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "Trump amenaza a Canadá con aranceles de un 50% al aluminio y el acero, el doble de lo previsto ",
-      "link": "https://elpais.com/internacional/2025-03-11/trump-castiga-a-canada-con-aranceles-de-un-50-al-aluminio-y-el-acero-el-doble-de-lo-previsto.html",
-      "content": "El presidente de EE UU anuncia la medida en represalia al aumento en un 25% del precio de la electricidad que sirve Ontario a Míchigan, Nueva York y Minnesota. Horas después, la provincia canadiense retira ese gravamen",
-      "pubDate": "2025-03-11T20:23:56.000Z",
-      "summary": "Президент С.Ш. оголошує, що згідно з цим показником, кількість опадів зростає на 25 відсотків від ціни електроенергії в штаті Мічиган, Нью - Йорк та Міннесота."
-    },
-    {
-      "title": "La fiscalía acusa a médicos y enfermeros por la muerte de Maradona: “Con crueldad decidieron que muriera”",
-      "link": "https://elpais.com/argentina/2025-03-11/la-fiscalia-acusa-a-medicos-y-enfermeros-por-la-muerte-de-maradona-con-crueldad-decidieron-que-muriera.html",
-      "content": "La querella argumenta en el arranque del juicio que hubo desidia ante el evidente deterioro de salud del jugador, fallecido en 2020",
-      "pubDate": "2025-03-11T20:41:07.000Z",
-      "summary": "Засуджуючи суд над очевидним погіршенням здоров’я гравця, він доводить, що його стан погіршився. Загинув у 2020 році, але, згідно з прогнозами, погіршення здоров’я було тривожним."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "El barcelonismo se emociona con Lamine",
-      "link": "https://elpais.com/deportes/futbol/2025-03-11/el-barcelonismo-se-emociona-con-lamine.html",
-      "content": "El Barça se clasifica para los cuartos de final de la Champions después de una primera parte pletórica, coronada por los goles del extremo catalán y de Raphinha, ante un valiente Benfica",
-      "pubDate": "2025-03-11T20:29:09.000Z",
-      "summary": "Барса класифікують на останніх кімнатах Чемпіона після першої плівки, яку він був коронований голами каталанського кінця і Рафіна, і Бенфіка коронується на ній з хоробрим 3-1."
-    },
-    {
-      "title": "La fiscalía acusa a médicos y enfermeros por la muerte de Maradona: “Con crueldad decidieron que muriera”",
-      "link": "https://elpais.com/argentina/2025-03-11/la-fiscalia-acusa-a-medicos-y-enfermeros-por-la-muerte-de-maradona-con-crueldad-decidieron-que-muriera.html",
-      "content": "La querella argumenta en el arranque del juicio que hubo desidia ante el evidente deterioro de salud del jugador, fallecido en 2020",
-      "pubDate": "2025-03-11T20:41:07.000Z",
-      "summary": "Засуджуючи суд над очевидним погіршенням здоров’я гравця, він доводить, що його стан погіршився. Загинув у 2020 році, але, згідно з прогнозами, погіршення здоров’я було тривожним."
-    },
-    {
-      "title": "Tiger Woods se rompe el tendón de Aquiles y no jugará el Masters de Augusta",
-      "link": "https://elpais.com/deportes/2025-03-11/tiger-woods-se-rompe-el-tendon-de-aquiles-y-no-jugara-el-masters-de-augusta.html",
-      "content": "El campeón de 15 grandes, de 49 años, vuelve a ver muy comprometida su carrera por culpa de las lesiones",
-      "pubDate": "2025-03-11T20:40:31.000Z",
-      "summary": "Чемпіон 15-го року, 49-річний чемпіон, знову дуже заважав кар'єрі через травми. він пережив травму в одній частині гонки."
-    },
-    {
-      "title": "La fiscalía acusa a médicos y enfermeros por la muerte de Maradona: “Con crueldad decidieron que muriera”",
-      "link": "https://elpais.com/argentina/2025-03-11/la-fiscalia-acusa-a-medicos-y-enfermeros-por-la-muerte-de-maradona-con-crueldad-decidieron-que-muriera.html",
-      "content": "La querella argumenta en el arranque del juicio que hubo desidia ante el evidente deterioro de salud del jugador, fallecido en 2020",
-      "pubDate": "2025-03-11T20:41:07.000Z",
-      "summary": "Засуджуючи суд над очевидним погіршенням здоров’я гравця, він доводить, що його стан погіршився. Загинув у 2020 році, але, згідно з прогнозами, погіршення здоров’я було тривожним."
+      "title": "Вітліс Гулі - Віторія, представила свою кандидатуру на посаду",
+      "link": "https://elpais.com/deportes/futbol/2025-03-13/el-betis-golea-al-vitoria-y-presenta-su-candidatura-al-titulo.html",
+      "content": "Se medirá en cuartos de la Conference al Jagiellonia, el campeón de Polonia",
+      "pubDate": "2025-03-13T22:26:37.000Z",
+      "imageUrl": null,
+      "summary": "Її вимірять у четвертих Конференсу в Джагіельоні, чемпіону Польщі."
+    },
+    {
+      "title": "РТВЕН відповідає до радника Президента Товариства в Мадріді: „Ваша вимога є надмірне втручання“",
+      "link": "https://elpais.com/comunicacion/2025-03-13/rtve-contesta-al-consejero-de-presidencia-de-la-comunidad-de-madrid-su-exigencia-es-una-intromision-indebida.html",
+      "content": "La corporación responde por escrito a una carta en la que el Gobierno de Ayuso pide que se emita un vídeo de la presidenta madrileña junto al estreno del documental sobre las muertes en las residencias",
+      "pubDate": "2025-03-13T22:24:34.000Z",
+      "imageUrl": null,
+      "summary": "У письмовій відповіді на це запитання уряд Аіко вимагає, щоб на виставці документального фільму про смерть у житлових будинках було виставлено відео з прем’єр - міністра мадридридської прем’єри."
+    },
+    {
+      "title": "Королівський Мадрид дихає з комфортною перемогою в Болоньї.",
+      "link": "https://elpais.com/deportes/baloncesto/2025-03-13/el-real-madrid-respira-con-un-comodo-triunfo-en-bolonia.html",
+      "content": "El conjunto blanco se impone por 67-80 a la Virtus a falta de cinco jornadas para el final de la fase regular. El Baskonia pierde en Berlín (97-90)",
+      "pubDate": "2025-03-13T21:46:27.000Z",
+      "imageUrl": null,
+      "summary": "Набір білого накладають 67- 80 на « Віртус », не маючи на п’ ять днів до кінця регулярної фази. Басківство втрачено у Берліні (97- 90)"
+    },
+    {
+      "title": "У 2022 році іранська височина за непрошену змагу знайшла притулок в Іспанії.",
+      "link": "https://elpais.com/internacional/2025-03-13/la-escaladora-irani-represaliada-en-2022-por-competir-sin-velo-se-refugia-en-espana-segun-medios-de-su-pais.html",
+      "content": "El hermano de Elnaz Rekabi atribuye su decisión a que las autoridades “la habían privado de todo” por su gesto de apoyo a las protestas contra el régimen de ese año",
+      "pubDate": "2025-03-13T21:34:39.000Z",
+      "imageUrl": null,
+      "summary": "Брат Елназ Рекабі приписує своє рішення, оскільки « органи влади позбавили її усього », за те, що вона підтримала протести проти режиму того року."
+    },
+    {
+      "title": "Атлерист б'є Гранаду і посвідчить про його переходи до кінця Королівського Кофету.",
+      "link": "https://elpais.com/deportes/futbol/2025-03-13/el-atletico-golpea-al-granada-y-certifica-su-pase-a-la-final-de-la-copa-de-la-reina.html",
+      "content": "Las colchoneras, que aumentaron la distancia con tres goles, aunque las nazarís no decayeron buscando el empate, disputarán la final contra el Barcelona el 8 de junio",
+      "pubDate": "2025-03-13T21:02:23.000Z",
+      "imageUrl": null,
+      "summary": "Барселона збільшила відстань з трьома голами, хоча Назаряни не відпали від пошуків патоки, 8 червня вони будуть сперечатися про кінець Барселона."
+    },
+    {
+      "title": "Бразилія прокладає автостопом у захищеному районі Амазонії, щоб запросити гостей на вершину Белемського клімату.",
+      "link": "https://elpais.com/america/2025-03-13/brasil-abre-una-autovia-en-una-zona-protegida-de-la-ciudad-de-la-amazonia-que-acogera-la-cop.html",
+      "content": "La ciudad, donde el 80% de la ciudadanía no tiene saneamiento, se prepara a marchas forzadas para recibir en noviembre a los 50.000 visitantes previstos",
+      "pubDate": "2025-03-13T20:49:11.000Z",
+      "imageUrl": null,
+      "summary": "У місті, де 80 відсотків населення не має санітарних умов, до листопада привчається приймати 50 000 гостей."
+    },
+    {
+      "title": "Португалія виголосить 18 травня, щоб розв’язати кризу, спричинену фірмою прем’єр - міністра.",
+      "link": "https://elpais.com/internacional/2025-03-13/portugal-celebrara-elecciones-el-18-de-mayo-para-zanjar-la-crisis-causada-por-la-empresa-del-primer-ministro.html",
+      "content": "El presidente de la República pide que “no se abra la puerta a experiencias que no se sabe cómo acaban”",
+      "pubDate": "2025-03-13T20:32:16.000Z",
+      "imageUrl": null,
+      "summary": "Президент Республіки вимагає, щоб „не відчинили дверей до досвідів, які не знають, як вони закінчуються“"
+    },
+    {
+      "title": "Вітліс Гулі - Віторія, представила свою кандидатуру на посаду",
+      "link": "https://elpais.com/deportes/futbol/2025-03-13/el-betis-golea-al-vitoria-y-presenta-su-candidatura-al-titulo.html",
+      "content": "Se medirá en cuartos de la Conference al Jagiellonia, el campeón de Polonia",
+      "pubDate": "2025-03-13T22:26:37.000Z",
+      "imageUrl": "https://elpais.com/deportes/futbol/2025-03-13/el-betis-golea-al-vitoria-y-presenta-su-candidatura-al-titulo.html",
+      "summary": "Її вимірять у четвертих Конференсу в Джагіельоні, чемпіону Польщі."
+    },
+    {
+      "title": "РТВЕН відповідає до радника Президента Товариства в Мадріді: „Ваша вимога є надмірне втручання“",
+      "link": "https://elpais.com/comunicacion/2025-03-13/rtve-contesta-al-consejero-de-presidencia-de-la-comunidad-de-madrid-su-exigencia-es-una-intromision-indebida.html",
+      "content": "La corporación responde por escrito a una carta en la que el Gobierno de Ayuso pide que se emita un vídeo de la presidenta madrileña junto al estreno del documental sobre las muertes en las residencias",
+      "pubDate": "2025-03-13T22:24:34.000Z",
+      "imageUrl": "https://elpais.com/comunicacion/2025-03-13/rtve-contesta-al-consejero-de-presidencia-de-la-comunidad-de-madrid-su-exigencia-es-una-intromision-indebida.html",
+      "summary": "У письмовій відповіді на це запитання уряд Аіко вимагає, щоб на виставці документального фільму про смерть у житлових будинках було виставлено відео з прем’єр - міністра мадридридської прем’єри."
+    },
+    {
+      "title": "Королівський Мадрид дихає з комфортною перемогою в Болоньї.",
+      "link": "https://elpais.com/deportes/baloncesto/2025-03-13/el-real-madrid-respira-con-un-comodo-triunfo-en-bolonia.html",
+      "content": "El conjunto blanco se impone por 67-80 a la Virtus a falta de cinco jornadas para el final de la fase regular. El Baskonia pierde en Berlín (97-90)",
+      "pubDate": "2025-03-13T21:46:27.000Z",
+      "imageUrl": "https://elpais.com/deportes/baloncesto/2025-03-13/el-real-madrid-respira-con-un-comodo-triunfo-en-bolonia.html",
+      "summary": "Набір білого накладають 67- 80 на « Віртус », не маючи на п’ ять днів до кінця регулярної фази. Басківство втрачено у Берліні (97- 90)"
+    },
+    {
+      "title": "У 2022 році іранська височина за непрошену змагу знайшла притулок в Іспанії.",
+      "link": "https://elpais.com/internacional/2025-03-13/la-escaladora-irani-represaliada-en-2022-por-competir-sin-velo-se-refugia-en-espana-segun-medios-de-su-pais.html",
+      "content": "El hermano de Elnaz Rekabi atribuye su decisión a que las autoridades “la habían privado de todo” por su gesto de apoyo a las protestas contra el régimen de ese año",
+      "pubDate": "2025-03-13T21:34:39.000Z",
+      "imageUrl": "https://elpais.com/internacional/2025-03-13/la-escaladora-irani-represaliada-en-2022-por-competir-sin-velo-se-refugia-en-espana-segun-medios-de-su-pais.html",
+      "summary": "Брат Елназ Рекабі приписує своє рішення, оскільки « органи влади позбавили її усього », за те, що вона підтримала протести проти режиму того року."
+    },
+    {
+      "title": "Вітліс Гулі - Віторія, представила свою кандидатуру на посаду",
+      "link": "https://elpais.com/deportes/futbol/2025-03-13/el-betis-golea-al-vitoria-y-presenta-su-candidatura-al-titulo.html",
+      "content": "Se medirá en cuartos de la Conference al Jagiellonia, el campeón de Polonia",
+      "pubDate": "2025-03-13T22:26:37.000Z",
+      "imageUrl": "https://elpais.com/deportes/futbol/2025-03-13/el-betis-golea-al-vitoria-y-presenta-su-candidatura-al-titulo.html",
+      "summary": "Її вимірять у четвертих Конференсу в Джагіельоні, чемпіону Польщі."
+    },
+    {
+      "title": "РТВЕН відповідає до радника Президента Товариства в Мадріді: „Ваша вимога є надмірне втручання“",
+      "link": "https://elpais.com/comunicacion/2025-03-13/rtve-contesta-al-consejero-de-presidencia-de-la-comunidad-de-madrid-su-exigencia-es-una-intromision-indebida.html",
+      "content": "La corporación responde por escrito a una carta en la que el Gobierno de Ayuso pide que se emita un vídeo de la presidenta madrileña junto al estreno del documental sobre las muertes en las residencias",
+      "pubDate": "2025-03-13T22:24:34.000Z",
+      "imageUrl": "https://elpais.com/comunicacion/2025-03-13/rtve-contesta-al-consejero-de-presidencia-de-la-comunidad-de-madrid-su-exigencia-es-una-intromision-indebida.html",
+      "summary": "У письмовій відповіді на це запитання уряд Аіко вимагає, щоб на виставці документального фільму про смерть у житлових будинках було виставлено відео з прем’єр - міністра мадридридської прем’єри."
+    },
+    {
+      "title": "Королівський Мадрид дихає з комфортною перемогою в Болоньї.",
+      "link": "https://elpais.com/deportes/baloncesto/2025-03-13/el-real-madrid-respira-con-un-comodo-triunfo-en-bolonia.html",
+      "content": "El conjunto blanco se impone por 67-80 a la Virtus a falta de cinco jornadas para el final de la fase regular. El Baskonia pierde en Berlín (97-90)",
+      "pubDate": "2025-03-13T21:46:27.000Z",
+      "imageUrl": "https://elpais.com/deportes/baloncesto/2025-03-13/el-real-madrid-respira-con-un-comodo-triunfo-en-bolonia.html",
+      "summary": "Набір білого накладають 67- 80 на « Віртус », не маючи на п’ ять днів до кінця регулярної фази. Басківство втрачено у Берліні (97- 90)"
+    },
+    {
+      "title": "Вітліс Гулі - Віторія, представила свою кандидатуру на посаду",
+      "link": "https://elpais.com/deportes/futbol/2025-03-13/el-betis-golea-al-vitoria-y-presenta-su-candidatura-al-titulo.html",
+      "content": "Se medirá en cuartos de la Conference al Jagiellonia, el campeón de Polonia",
+      "pubDate": "2025-03-13T22:26:37.000Z",
+      "imageUrl": "https://elpais.com/deportes/futbol/2025-03-13/el-betis-golea-al-vitoria-y-presenta-su-candidatura-al-titulo.html",
+      "summary": "Її вимірять у четвертих Конференсу в Джагіельоні, чемпіону Польщі."
+    },
+    {
+      "title": "РТВЕН відповідає до радника Президента Товариства в Мадріді: „Ваша вимога є надмірне втручання“",
+      "link": "https://elpais.com/comunicacion/2025-03-13/rtve-contesta-al-consejero-de-presidencia-de-la-comunidad-de-madrid-su-exigencia-es-una-intromision-indebida.html",
+      "content": "La corporación responde por escrito a una carta en la que el Gobierno de Ayuso pide que se emita un vídeo de la presidenta madrileña junto al estreno del documental sobre las muertes en las residencias",
+      "pubDate": "2025-03-13T22:24:34.000Z",
+      "imageUrl": "https://elpais.com/comunicacion/2025-03-13/rtve-contesta-al-consejero-de-presidencia-de-la-comunidad-de-madrid-su-exigencia-es-una-intromision-indebida.html",
+      "summary": "У письмовій відповіді на це запитання уряд Аіко вимагає, щоб на виставці документального фільму про смерть у житлових будинках було виставлено відео з прем’єр - міністра мадридридської прем’єри."
     }
   ],
-  "lastProcessedDate": "2025-03-11T20:41:07.000Z"
+  "lastProcessedDate": "2025-03-13T22:24:34.000Z"
 }
