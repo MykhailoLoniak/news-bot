@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewBox="0 0 1000 180" role="img" aria-label="News bot architecture">
+<rect width="1000" height="180" rx="18" fill="#0b1220"/><g font-family="Arial" font-size="16" text-anchor="middle" fill="#e5e7eb">
+<g fill="#172033" stroke="#38bdf8"><rect x="20" y="55" width="130" height="70" rx="12"/><rect x="185" y="55" width="130" height="70" rx="12"/><rect x="350" y="55" width="130" height="70" rx="12"/><rect x="515" y="55" width="130" height="70" rx="12"/><rect x="680" y="55" width="130" height="70" rx="12"/><rect x="845" y="55" width="135" height="70" rx="12"/></g>
+<text x="85" y="95">RSS feeds</text><text x="250" y="85">Parser &amp;</text><text x="250" y="108">sanitizer</text><text x="415" y="95">Deduplication</text><text x="580" y="85">Gemini</text><text x="580" y="108">summary</text><text x="745" y="95">SQLite</text><text x="912" y="85">Telegram</text><text x="912" y="108">subscribers</text>
+<g stroke="#94a3b8" stroke-width="3" fill="none"><path d="M150 90h35"/><path d="M315 90h35"/><path d="M480 90h35"/><path d="M645 90h35"/><path d="M810 90h35"/></g></g></svg>

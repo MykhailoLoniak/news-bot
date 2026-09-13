@@ -1,2 +1,15 @@
 node_modules/
+coverage/
 .env
+.env.*
+!.env.example
+userChatIds.txt
+data/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite.backup
+*.sqlite.backup.tmp
+*.sqlite.corrupt-*
+*.log
+npm-debug.log*

@@ -1,238 +1,351 @@
-const Parser = require("rss-parser");
-const axios = require("axios");
-const { Markup, Telegraf } = require("telegraf");
-const { RSS_FEEDS, HUGGINGFACE_API_KEY, TELEGRAM_BOT_TOKEN, MISTRAL_API_KEY, TELEGRAM_CHAT_ID } = require("./config");
-const { readDB, saveDB } = require("./db");
-const fs = require('fs');
-const { Mistral } = require('@mistralai/mistralai');
+const { Telegraf } = require("telegraf");
+const { runtimeConfig } = require("./config");
+const {
+  createBackup,
+  upsertUser,
+  deactivateUser,
+  deleteUser,
+  getActiveChatIds,
+  getUser,
+  findArticle,
+  hasDelivery,
+  getDeliveredChatIds,
+  persistDelivery,
+  closeDatabase,
+} = require("./database");
+const { generateArticle } = require("./services/gemini");
+const { fetchAllFeeds, fetchOpenGraphImage } = require("./services/rss");
+const {
+  TELEGRAM_CAPTION_LIMIT,
+  formatArticleHtml,
+  articleKeyboard,
+  mainMenu,
+  escapeHtml,
+  CommandRateLimiter,
+} = require("./services/telegram");
+const { logger } = require("./utils/logger");
+const { NewsPollingJob } = require("./jobs/news-polling");
+const { createHealthServer } = require("./services/health");
 
-const parser = new Parser();
-const bot = new Telegraf(TELEGRAM_BOT_TOKEN);
+const bot = new Telegraf(runtimeConfig.telegramBotToken);
+let feedCache = { expiresAt: 0, articles: null, promise: null };
+const generationCache = new Map();
+const commandRateLimiter = new CommandRateLimiter({
+  limit: runtimeConfig.commandRateLimit,
+  windowMs: runtimeConfig.commandRateWindowMs,
+});
+const healthServer = createHealthServer({ port: runtimeConfig.healthPort, logger });
 
-const client = new Mistral({ apiKey: MISTRAL_API_KEY });
-
-async function translateToUkrainian(text) {
-  try {
-    console.log("Виконується запит на переклад...");
-    const response = await axios.post(
-      "https://api-inference.huggingface.co/models/Helsinki-NLP/opus-mt-es-uk",
-      { inputs: text },
-      { headers: { Authorization: `Bearer ${HUGGINGFACE_API_KEY}` } }
-    );
-
-    console.log("Отримана відповідь:", response.data);
-    if (!response.data || !Array.isArray(response.data) || response.data.length === 0) {
-      throw new Error("Порожня відповідь від API");
-    }
-
-    return response.data[0]?.translation_text || text;
-  } catch (error) {
-    console.error("Помилка перекладу:", error.response?.data || error.message);
-    return text;
-  }
-}
-
-async function fetchRSS() {
-  console.log("🔄 Завантаження RSS-стрічок...");
-  const articles = (await Promise.all(RSS_FEEDS.map(async (url) => {
-    try {
-      const feed = await parser.parseURL(url);
-      console.log(`✅ Завантажено ${feed.items.length} статей з ${url}`);
-      return feed.items.map(item => {
-        let imageUrl = null;
-        const imageUrlMatch = item['content:encoded']?.match(/<img[^>]+src="([^"]+)"/);
-        if (imageUrlMatch) {
-          imageUrl = imageUrlMatch[1];
-        } else if (item?.media?.content?.url) {
-          imageUrl = item.media.content.url;
-        } else if (item?.link) {
-          imageUrl = item.link;
-        }
-        return {
-          title: item.title,
-          link: item.link,
-          content: item.contentSnippet ?? item.content ?? "Без опису",
-          pubDate: new Date(item.pubDate),
-          imageUrl: imageUrl,
-        };
-      });
-    } catch (error) {
-      console.error(`❌ Помилка завантаження RSS з ${url}:`, error.message);
-      return [];
-    }
-  }))).flat();
-
-  return articles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-}
-
-function extractLinks(html) {
-  let links = [];
-  let textWithPlaceholders = html.replace(
-    /<a[^>]+href="([^"]+)"[^>]*>(.*?)<\/a>/g,
-    (match, url, text) => {
-      links.push({ text, url });
-      return `[LINK]`;
-    }
-  );
-  return { textWithPlaceholders, links };
-}
-
-function restoreLinks(translatedText, links) {
-  let index = 0;
-  return translatedText.replace(/\[LINK\]/g, () => {
-    if (index < links.length) {
-      return `${links[index].text} (${links[index].url})`;
-    }
-    return "";
-  });
-}
-
-async function processArticleContent(html) {
-  const { textWithPlaceholders, links } = extractLinks(html);
-  let translated = await translateToUkrainian(textWithPlaceholders);
-  return restoreLinks(translated, links);
-}
-
-
-
-async function checkForNewArticles() {
-  console.log("🔎 Перевірка нових статей...");
-  const db = readDB();
-  const newArticles = await fetchRSS();
-  const getLatestPubDate = () => {
-    let date = new Date(0);
-    newArticles.forEach(e => {
-      if (new Date(e.pubDate) > date) {
-        date = new Date(e.pubDate);
-      }
-    });
-    return date;
-  };
-
-  const lastProcessedDate = db.lastProcessedDate || getLatestPubDate();
-  let addedArticles = newArticles.filter(article => new Date(article.pubDate) > new Date(lastProcessedDate));
-
-  if (addedArticles.length > 0) {
-    console.log(`📢 Нових статей: ${addedArticles.length}`);
-    for (const article of addedArticles) {
-      console.log(`📩 Обробка статті: ${article.title}`);
-
-      article.title = await translateToUkrainian(article.title);
-      article.summary = await await processArticleContent(article.content);
-
-      console.log(`📩 Статті: ${article}`);
-
-      let messageSent;
-      if (article.imageUrl) {
-        messageSent = await sendTelegramMessage(
-          `📰 *${article.title}*\n\n${article.summary}\n\n[Читати більше](${article.link})`,
-          article.imageUrl
-        );
-      } else {
-        messageSent = await sendTelegramMessage(
-          `📰 *${article.title}*\n\n${article.summary}\n\n[Читати більше](${article.link})`
-        );
-      }
-
-      if (messageSent) {
-        db.articles.push(article);
-        db.lastProcessedDate = article.pubDate;
-        console.log(`✅ Стаття надіслана: ${article.title}`);
-      } else {
-        console.error(`❌ Не вдалося надіслати статтю: ${article.title}`);
-      }
-    }
-
-    saveDB(db);
-    console.log(`💾 Збережено ${addedArticles.length} нових статей у базу`);
-  } else {
-    console.log("🔍 Нових статей не знайдено");
-  }
-}
-
-// checkForNewArticles()
-
-async function summarizer(text) {
-  console.log("📜 Узагальнення тексту...");
-  try {
-    const sentences = text.split(". ");
-    text = sentences.slice(0, Math.min(sentences.length, 5)).join(". ") + ".";
-
-    const response = await axios.post(
-      "https://api-inference.huggingface.co/models/facebook/bart-large-cnn",
-      { inputs: text },
-      { headers: { Authorization: `Bearer ${HUGGINGFACE_API_KEY}` } }
-    );
-
-    const summary = response.data?.[0]?.summary_text;
-    return summary ? await translateToUkrainian(summary) : await translateToUkrainian(text);
-  } catch (error) {
-    console.error("❌ Помилка узагальнення:", error.message);
-    return await translateToUkrainian(text.split(".").slice(0, 3).join(".") + "...");
-  }
-}
-
-let userChatId = 369600113;
-
-async function sendTelegramMessage(message, photo) {
-  if (!userChatId) {
-    console.error("❌ Не вказано chat_id для надсилання повідомлення");
-    return false;
-  }
-
-  console.log("✉️ Надсилання повідомлення в Telegram...");
-  try {
-    if (photo) {
-      await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
-        chat_id: userChatId,
-        photo: photo,
-        caption: message,
-        parse_mode: "Markdown",
-      });
-    } else {
-      await axios.post(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-        chat_id: userChatId,
-        text: message,
-        parse_mode: "Markdown",
-        disable_web_page_preview: true
-      });
-    }
-
-    return true;
-  } catch (error) {
-    console.error("❌ Помилка надсилання в Telegram:", error);
-    return false;
-  }
-}
-
-bot.start((ctx) => {
-  userChatId = ctx.message.chat.id;
-  console.log(`User's chat_id: ${userChatId}`);
-
-  fs.appendFile('userChatIds.txt', userChatId + '\n', (err) => {
-    if (err) {
-      console.error('Помилка збереження chat_id:', err);
-    } else {
-      console.log('chat_id збережено:', userChatId);
-    }
-  });
-
-  ctx.reply(
-    'Привіт! Я новинний бот. Я буду надсилати тобі останні новини.',
-    Markup.keyboard([
-      ["📢 Новини", "📆 Події"],
-      ["ℹ Інформація", "❓ Допомога"],
-    ])
-      .oneTime()
-      .resize()
-  );
+bot.use(async (ctx, next) => {
+  const isUserAction = ctx.callbackQuery || ctx.message?.text?.startsWith("/");
+  if (!isUserAction || commandRateLimiter.consume(ctx.chat?.id)) return next();
+  const message = "Забагато команд. Будь ласка, зачекайте кілька секунд і спробуйте ще раз.";
+  if (ctx.callbackQuery) return ctx.answerCbQuery(message, { show_alert: true });
+  return ctx.reply(message);
 });
 
-bot.hears("📢 Новини", async (ctx) => { await checkForNewArticles() });
-bot.hears("📆 Події", (ctx) => ctx.reply("Список подій..."));
-bot.hears("ℹ Інформація", (ctx) => ctx.reply("Це бот для новин."));
-bot.hears("❓ Допомога", (ctx) => ctx.reply("Список команд: /start, /menu"));
+async function getCachedFeed() {
+  if (feedCache.articles && feedCache.expiresAt > Date.now()) return feedCache.articles;
+  if (feedCache.promise) return feedCache.promise;
 
-bot.launch();
+  logger.info("Fetching RSS feeds");
+  feedCache.promise = fetchAllFeeds(runtimeConfig.rssSources)
+    .then((articles) => {
+      feedCache = {
+        articles,
+        expiresAt: Date.now() + runtimeConfig.feedCacheTtlMs,
+        promise: null,
+      };
+      return articles;
+    })
+    .catch((error) => {
+      feedCache.promise = null;
+      throw error;
+    });
+  return feedCache.promise;
+}
 
-console.log("🎯 Бот готовий до роботи!");
+function enrichArticle(article) {
+  if (!generationCache.has(article.id)) {
+    generationCache.set(
+      article.id,
+      Promise.all([
+        generateArticle(article.title, article.content),
+        article.imageUrl ? Promise.resolve(article.imageUrl) : fetchOpenGraphImage(article.link),
+      ]).then(([generated, imageUrl]) => ({
+        ...article,
+        originalTitle: article.title,
+        imageUrl,
+        ...generated,
+      }))
+    );
+  }
+  return generationCache.get(article.id);
+}
+
+async function sendArticle(article, chatIds) {
+  const delivered = [];
+  const html = formatArticleHtml(article);
+  const replyMarkup = articleKeyboard(article.link);
+  const sendText = (chatId) =>
+    bot.telegram.sendMessage(chatId, html, {
+      parse_mode: "HTML",
+      reply_markup: replyMarkup,
+      link_preview_options: { is_disabled: true },
+    });
+
+  for (const chatId of chatIds) {
+    try {
+      if (article.imageUrl) {
+        if ([...html].length <= TELEGRAM_CAPTION_LIMIT) {
+          try {
+            await bot.telegram.sendPhoto(chatId, article.imageUrl, {
+              caption: html,
+              parse_mode: "HTML",
+              reply_markup: replyMarkup,
+            });
+          } catch {
+            logger.warn("Telegram photo unavailable; sending text fallback", { chatId });
+            await sendText(chatId);
+          }
+        } else {
+          try {
+            await bot.telegram.sendPhoto(chatId, article.imageUrl);
+          } catch {
+            logger.warn("Telegram photo unavailable; sending text only", { chatId });
+          }
+          await sendText(chatId);
+        }
+      } else {
+        await sendText(chatId);
+      }
+      delivered.push(chatId);
+    } catch (error) {
+      logger.error("Telegram delivery failed", { chatId, error });
+    }
+  }
+  return delivered;
+}
+
+async function executeNewsCycle() {
+  logger.info("Checking for new articles");
+  const activeChatIds = getActiveChatIds();
+  const feed = await getCachedFeed();
+  if (activeChatIds.length === 0) {
+    logger.info("No active subscribers");
+    return;
+  }
+  const candidates = feed
+    .map((article) => ({ article, stored: findArticle(article) }))
+    .filter(({ stored }) => !stored?.processedAt)
+    .slice(0, runtimeConfig.maxArticlesPerCycle);
+
+  if (candidates.length === 0) {
+    logger.info("No new articles found");
+    return;
+  }
+
+  logger.info("Processing articles", { count: candidates.length });
+  const enrichedArticles = await Promise.all(
+    candidates.map(({ article, stored }) =>
+      stored ? { ...article, ...stored, content: article.content } : enrichArticle(article)
+    )
+  );
+  for (const article of enrichedArticles) {
+    const deliveredChatIds = getDeliveredChatIds(article.id);
+    const pendingChatIds = activeChatIds.filter((chatId) => !deliveredChatIds.includes(chatId));
+    const delivered = await sendArticle(article, pendingChatIds);
+    persistDelivery(article, delivered);
+  }
+  createBackup();
+}
+
+function runNewsCycle() {
+  return pollingJob.run();
+}
+
+const pollingJob = new NewsPollingJob({
+  poll: executeNewsCycle,
+  intervalMs: runtimeConfig.rssCheckIntervalMs,
+  logger,
+});
+
+async function sendLatestArticles(chatId, { skipDelivered = false } = {}) {
+  const feed = await getCachedFeed();
+  if (feed.length === 0) throw new Error("No RSS articles are currently available");
+  const latestArticles = await Promise.all(
+    feed.slice(0, runtimeConfig.initialArticlesCount).map((article) => {
+      const stored = findArticle(article);
+      return stored ? { ...article, ...stored, content: article.content } : enrichArticle(article);
+    })
+  );
+  let deliveredCount = 0;
+  let attemptedCount = 0;
+  for (const article of latestArticles) {
+    if (skipDelivered && hasDelivery(article.id, chatId)) continue;
+    attemptedCount += 1;
+    const delivered = await sendArticle(article, [chatId]);
+    if (delivered.length === 0) continue;
+
+    persistDelivery(article, delivered);
+    deliveredCount += 1;
+  }
+  createBackup();
+  return { deliveredCount, attemptedCount };
+}
+
+function withUxError(handler) {
+  return async (ctx) => {
+    try {
+      if (ctx.callbackQuery) await ctx.answerCbQuery();
+      await handler(ctx);
+    } catch (error) {
+      logger.error("Telegram command failed", { error });
+      await ctx.reply("Сервіс тимчасово недоступний. Будь ласка, спробуйте ще раз трохи пізніше.");
+    }
+  };
+}
+
+async function showStart(ctx) {
+  const { activated } = upsertUser(ctx.chat.id, "uk");
+  createBackup();
+  await ctx.reply(
+    "<b>Вітаю! Я новинний бот.</b>\n\n" +
+      "Збираю новини з перевірених RSS-джерел, перекладаю їх українською та надсилаю стислий переказ. " +
+      "Скористайтеся меню або командами нижче.",
+    { parse_mode: "HTML", reply_markup: mainMenu() }
+  );
+  if (activated) {
+    const result = await sendLatestArticles(ctx.chat.id, { skipDelivered: true });
+    if (result.attemptedCount > 0 && result.deliveredCount === 0) {
+      throw new Error("Initial Telegram delivery failed");
+    }
+  }
+}
+
+async function showLatest(ctx) {
+  if (!getUser(ctx.chat.id)) {
+    await ctx.reply("Спочатку виконайте /start, щоб створити профіль.");
+    return;
+  }
+  const result = await sendLatestArticles(ctx.chat.id);
+  if (result.deliveredCount === 0) throw new Error("Telegram delivery failed");
+}
+
+async function subscribeUser(ctx) {
+  const { activated } = upsertUser(ctx.chat.id, "uk");
+  createBackup();
+  await ctx.reply(activated ? "Підписку активовано ✅" : "Ваша підписка вже активна ✅", {
+    reply_markup: mainMenu(),
+  });
+}
+
+async function unsubscribeUser(ctx) {
+  const removed = removeSubscriber(ctx.chat.id);
+  await ctx.reply(
+    removed ? "Ви відписалися від автоматичних новин 🔕" : "Ваша підписка вже неактивна.",
+    {
+      reply_markup: mainMenu(),
+    }
+  );
+}
+
+async function showSources(ctx) {
+  const lines = runtimeConfig.rssSources.map(
+    (source) => `• <b>${escapeHtml(source.name)}</b> — ${escapeHtml(source.language)}`
+  );
+  await ctx.reply(`<b>Джерела новин</b>\n\n${lines.join("\n")}`, {
+    parse_mode: "HTML",
+    reply_markup: mainMenu(),
+  });
+}
+
+async function showStatus(ctx) {
+  const user = getUser(ctx.chat.id);
+  const status = user?.isActive ? "активна ✅" : "неактивна 🔕";
+  await ctx.reply(`Стан підписки: ${status}`, { reply_markup: mainMenu() });
+}
+
+async function showHelp(ctx) {
+  await ctx.reply(
+    "<b>Команди</b>\n\n" +
+      "/latest — показати останні новини\n" +
+      "/subscribe — увімкнути автоматичну розсилку\n" +
+      "/unsubscribe — вимкнути розсилку\n" +
+      "/sources — показати джерела\n" +
+      "/status — стан підписки\n" +
+      "/delete_my_data — видалити персональні дані\n" +
+      "/help — ця довідка",
+    { parse_mode: "HTML", reply_markup: mainMenu() }
+  );
+}
+
+bot.start(withUxError(showStart));
+bot.command("latest", withUxError(showLatest));
+bot.command("subscribe", withUxError(subscribeUser));
+bot.command("unsubscribe", withUxError(unsubscribeUser));
+bot.command("sources", withUxError(showSources));
+bot.command("status", withUxError(showStatus));
+bot.command("help", withUxError(showHelp));
+
+function removeSubscriber(chatId) {
+  const removed = deactivateUser(chatId);
+  if (removed) createBackup();
+  return removed;
+}
+
+bot.command(
+  "delete_my_data",
+  withUxError(async (ctx) => {
+    deleteUser(ctx.chat.id);
+    createBackup();
+    await ctx.reply("Ваш Telegram chat ID та історію доставок видалено.");
+  })
+);
+
+bot.action("latest", withUxError(showLatest));
+bot.action("subscribe", withUxError(subscribeUser));
+bot.action("unsubscribe", withUxError(unsubscribeUser));
+bot.action("sources", withUxError(showSources));
+bot.action("status", withUxError(showStatus));
+bot.action("help", withUxError(showHelp));
+
+bot.catch((error) => {
+  logger.error("Unhandled Telegram error", { error });
+});
+
+async function start() {
+  await bot.launch();
+  await healthServer.start();
+  await bot.telegram
+    .setMyCommands([
+      { command: "latest", description: "Останні новини" },
+      { command: "subscribe", description: "Увімкнути автоматичну розсилку" },
+      { command: "unsubscribe", description: "Вимкнути автоматичну розсилку" },
+      { command: "sources", description: "Джерела новин" },
+      { command: "status", description: "Стан підписки" },
+      { command: "help", description: "Допомога" },
+      { command: "delete_my_data", description: "Видалити мої дані" },
+    ])
+    .catch((error) => logger.error("Failed to update Telegram command list", { error }));
+  process.once("SIGINT", () => shutdown("SIGINT"));
+  process.once("SIGTERM", () => shutdown("SIGTERM"));
+  logger.info("Bot is ready");
+  await pollingJob.start();
+}
+
+async function shutdown(signal) {
+  pollingJob.stop();
+  bot.stop(signal);
+  await healthServer.stop();
+  closeDatabase();
+}
+
+if (require.main === module) {
+  start().catch((error) => {
+    logger.error("Application startup failed", { error });
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { start, shutdown, runNewsCycle, bot };
